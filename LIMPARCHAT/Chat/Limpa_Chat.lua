@@ -1,0 +1,70 @@
+--//Script By (Teixeira)// 
+
+everybody = getRootElement()
+
+function limparChat()
+  outputChatBox ( " ", everybody, 100,100,100,false )
+  outputChatBox ( " ", everybody, 100,100,100,false )
+  outputChatBox ( " ", everybody, 100,100,100,false )
+  outputChatBox ( " ", everybody, 100,100,100,false )
+  outputChatBox ( " ", everybody, 100,100,100,false )
+  outputChatBox ( " ", everybody, 100,100,100,false )
+  outputChatBox ( " ", everybody, 100,100,100,false )
+  outputChatBox ( " ", everybody, 100,100,100,false )
+  outputChatBox ( " ", everybody, 100,100,100,false )
+  outputChatBox ( " ", everybody, 100,100,100,false )
+  outputChatBox ( " ", everybody, 100,100,100,false )
+  outputChatBox ( " ", everybody, 100,100,100,false )
+  outputChatBox ( " ", everybody, 100,100,100,false )
+  outputChatBox ( " ", everybody, 100,100,100,false )
+  outputChatBox ( " ", everybody, 100,100,100,false )
+  outputChatBox ( " ", everybody, 100,100,100,false )
+  outputChatBox ( "#FFBB00Limpeza de Chat automatico #969696( NightFall Gaming )", everybody, 255, 255, 255, true)
+end
+
+setTimer(limparChat, 3000000, 0)
+
+addCommandHandler ( "limparchat", function (player, cmd) 
+  local name = getPlayerName(player)
+  if isObjectInACLGroup ( "user." .. getAccountName(getPlayerAccount(player)), aclGetGroup("Dono")) then
+  outputChatBox ( " ", everybody, 100,100,100,false )
+  outputChatBox ( " ", everybody, 100,100,100,false )
+  outputChatBox ( " ", everybody, 100,100,100,false )
+  outputChatBox ( " ", everybody, 100,100,100,false )
+  outputChatBox ( " ", everybody, 100,100,100,false )
+  outputChatBox ( " ", everybody, 100,100,100,false )
+  outputChatBox ( " ", everybody, 100,100,100,false )
+  outputChatBox ( " ", everybody, 100,100,100,false )
+  outputChatBox ( " ", everybody, 100,100,100,false )
+  outputChatBox ( " ", everybody, 100,100,100,false )
+  outputChatBox ( " ", everybody, 100,100,100,false )
+  outputChatBox ( " ", everybody, 100,100,100,false )
+  outputChatBox ( " ", everybody, 100,100,100,false )
+  outputChatBox ( " ", everybody, 100,100,100,false )
+  outputChatBox ( " ", everybody, 100,100,100,false )
+  outputChatBox ( " ", everybody, 100,100,100,false )
+  outputChatBox ( "#969696( NightFall Gaming ) #FFBB00O #00FF00Dono: "..name.." #FFBB00Limpou o Chat !!", everybody, 255, 255, 255, true)
+    return true 
+  end
+  if isObjectInACLGroup ( "user." .. getAccountName(getPlayerAccount(player)), aclGetGroup("Staff")) then
+    outputChatBox ( " ", everybody, 100,100,100,false )
+    outputChatBox ( " ", everybody, 100,100,100,false )
+    outputChatBox ( " ", everybody, 100,100,100,false )
+    outputChatBox ( " ", everybody, 100,100,100,false )
+    outputChatBox ( " ", everybody, 100,100,100,false )
+    outputChatBox ( " ", everybody, 100,100,100,false )
+    outputChatBox ( " ", everybody, 100,100,100,false )
+    outputChatBox ( " ", everybody, 100,100,100,false )
+    outputChatBox ( " ", everybody, 100,100,100,false )
+    outputChatBox ( " ", everybody, 100,100,100,false )
+    outputChatBox ( " ", everybody, 100,100,100,false )
+    outputChatBox ( " ", everybody, 100,100,100,false )
+    outputChatBox ( " ", everybody, 100,100,100,false )
+    outputChatBox ( " ", everybody, 100,100,100,false )
+    outputChatBox ( " ", everybody, 100,100,100,false )
+    outputChatBox ( " ", everybody, 100,100,100,false )
+    outputChatBox ( "#969696( NightFall Gaming ) #FFBB00O #00FF00Staff: "..name.." #FFBB00Limpou o Chat !!", everybody, 255, 255, 255, true)
+    return true
+  end
+    return false
+end) 
